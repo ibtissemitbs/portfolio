@@ -1,0 +1,22 @@
+# Node/npm artifacts (if any)
+node_modules/
+*.log
+
+# Python server artifacts
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+
+# VSCode
+.vscode/
+
+# Build/coverage (if any)
+dist/
+build/
+coverage/

@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Crop Recommendation System",
+    "stack": "Machine Learning, Python, Flask",
+    "description": "ML model using an ensemble of algorithms to recommend the best crop based on environmental conditions.",
+    "demo": "",
+    "code": "",
+    "image": "assets/crop.jpg"
+  },
+  {
+    "title": "TheraMind - AI Therapeutic Agent",
+    "stack": "Next.js, MongoDB, API",
+    "description": "Intelligent web application for mood tracking, therapeutic exercises, appointment scheduling and real-time messaging.",
+    "demo": "",
+    "code": "",
+    "image": "assets/th.jpg"
+  },
+  {
+    "title": "Hotel Dashboard & Segmentation",
+    "stack": "Python, SQL Server, Power BI, Streamlit",
+    "description": "Analysis and visualization of PMS data, KPI tracking, clustering and Power BI dashboards integrated in a Streamlit app.",
+    "demo": "",
+    "code": "",
+    "image": "assets/dashboard.jpg"
+  },
+  {
+    "title": "Weather Prediction App",
+    "stack": "Python, API",
+    "description": "Weather prediction using real-world data and external APIs, with a Python-based user interface.",
+    "demo": "",
+    "code": "",
+    "image": "assets/clouds-overcast.jpg"
+  },
+  {
+    "title": "MERN Messaging App",
+    "stack": "MongoDB, Express, React, Node.js",
+    "description": "Real-time chat application with MongoDB storage and React front-end.",
+    "demo": "",
+    "code": "",
+    "image": "assets/mern.jpg"
+  }
+  
+]
