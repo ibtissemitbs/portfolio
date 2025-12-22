@@ -23,8 +23,8 @@
       <div class="hero-content container">
         <div class="hero-left">
           <div class="blob-wrap">
-            <img class="blob" src="assets/blob.svg" alt="decorative blob" aria-hidden="true" />
-            <img id="profile-photo" class="profile" src="assets/profile.JPG" alt="Profile photo" />
+            <img class="blob" src="Assets/blob.svg" alt="decorative blob" aria-hidden="true" />
+            <img id="profile-photo" class="profile" src="Assets/profile.JPG" alt="Profile photo" />
           </div>
         </div>
         <div class="hero-right">
@@ -34,7 +34,7 @@
 
           <div class="hero-actions">
             <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn ghost" id="download-cv" href="assets/CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn ghost" id="download-cv" href="Assets/CV.pdf" target="_blank" rel="noopener">Download CV</a>
           </div>
 
           <div class="socials">
@@ -115,7 +115,7 @@
             const card = document.createElement('article');
             card.className = 'project-card';
             card.innerHTML = `
-              <img src="${p.image||'assets/project-placeholder.svg'}" alt="${p.title}" />
+              <img src="${p.image||'Assets/project-placeholder.svg'}" alt="${p.title}" />
               <div class="project-body">
                 <h3>${p.title}</h3>
                 <p class="meta">${p.stack}</p>
