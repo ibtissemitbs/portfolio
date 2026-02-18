@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
+  
   <body>
     <header class="hero">
       <nav class="nav container">
@@ -130,6 +132,48 @@
         }
       }
       loadProjects();
+
+      // Animation GSAP - Entrée fluide des éléments
+      window.addEventListener('DOMContentLoaded', function() {
+        // Animation du header
+        gsap.from(".hero", { opacity: 0, y: -50, duration: 1, ease: "power2.out" });
+        
+        // Animation de la photo de profil
+        gsap.from("#profile-photo", { opacity: 0, x: -100, rotation: -10, duration: 1, delay: 0.3, ease: "power2.out" });
+        
+        // Animation du bouton principal
+        gsap.from(".btn.primary", { opacity: 0, scale: 0.5, duration: 0.8, delay: 0.8, ease: "back.out(1.7)" });
+        
+        // Animation du bouton secondaire
+        gsap.from(".btn.ghost", { opacity: 0, scale: 0.5, duration: 0.8, delay: 1, ease: "back.out(1.7)" });
+        
+        // Animation des sections au scroll
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section, index) => {
+          gsap.from(section, {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              toggleActions: "play none none reverse"
+            }
+          });
+        });
+        
+        // Animation des cartes de projets au chargement
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach((card, index) => {
+          gsap.from(card, {
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            delay: index * 0.1,
+            ease: "power2.out"
+          });
+        });
+      });
     </script>
   </body>
 </html>
